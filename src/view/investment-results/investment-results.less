@@ -1,0 +1,124 @@
+.zsmain {
+  width: 1920px;
+  height: 1080px;
+  background-image: url("../../assets/img/public/page-a.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+
+  &:before {
+    content: "";
+    display: table;
+  }
+
+  .title-head {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 13px;
+  }
+  .title-head-two {
+    text-align: center;
+    color: #0795d1;
+    font-size: 22px;
+    margin-top: -10px;
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 60px;
+    height: 30px;
+    background-image: url("../../assets/img/public/back-btn.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .small-title {
+    margin: 5px 0;
+    padding: 0 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/index/small-title-bg.png");
+    font-size: 26px;
+    font-family: PingFang SC;
+    font-weight: 800;
+  }
+
+  .zsResult {
+    height: 780px;
+    padding: 10px 20px;
+    margin: 80px 100px 10px 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/public/table-bg.png");
+
+    // 修改表格颜色
+    .zsResultTable {
+      border: 1px solid #063D71;
+
+      // 调整表格上边距
+      .ivu-table-cell {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      //隐藏滚动条
+      .ivu-table-overflowX {
+        overflow-x: hidden;
+      }
+
+      .ivu-table:after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        z-index: 3;
+      }
+
+      // 设置表格背景颜色
+      .ivu-table-header thead tr th {
+        background-color: #063D71;
+        color: #fff;
+      }
+
+      .ivu-table td {
+        background-color: #041F3C;
+        color: #fff;
+      }
+    }
+  }
+
+  // 修改表格页码
+  .tablePgae {
+
+    .ivu-page-next,
+    .ivu-page-prev,
+    .ivu-page-item,
+    .ivu-select-selection,
+    .ivu-select .ivu-select-dropdown,
+    .ivu-page-options-elevator input {
+      background-color: #131C3F;
+      border-color: #32CAF6;
+    }
+    margin-top: 25px;
+  }
+  .foot-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+
+
+}

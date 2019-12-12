@@ -1,0 +1,175 @@
+// 淡入淡出效果
+.my-enter,
+.my-leave-to {
+  opacity: 0;
+}
+
+.my-enter-to,
+.my-leave {
+  opacity: 1;
+}
+
+.my-enter-active,
+.my-leave-active {
+  transition: all 2s;
+}
+
+
+.mains {
+  width: 1920px;
+  height: 1080px;
+  background-image: url("../../assets/img/public/page-a.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+
+  &:before {
+    content: "";
+    display: table;
+  }
+  .title-head {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 13px;
+  }
+  .title-head-two {
+    text-align: center;
+    color: #0795d1;
+    font-size: 22px;
+    margin-top: -10px;
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 60px;
+    height: 30px;
+    background-image: url("../../assets/img/public/back-btn.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .company-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/img/public/company-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .wrraper {
+    position: relative;
+    height: 780px;
+    padding: 10px 20px;
+    margin: 70px 100px 10px 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/public/table-bg.png");
+  }
+
+  .tab-title-bg {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    padding: 0 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/index/small-title-bg.png");
+  }
+
+  .chart-content {
+    .type-title {
+      position: relative;
+      font-size: 20px;
+      font-family: PingFang SC;
+      font-weight: 800;
+      color: #fff;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        content: '';
+        width: 40px;
+        height: 4px;
+        background: #43a5fe;
+        z-index: -99;
+      }
+    }
+  }
+  .pointer{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+    //  纳统企业库四大类分类标签页
+  .company-tabs-enterprise   {
+      display: flex;
+      height: 40px;
+    width: 1290px;
+  }
+  .company-tabs-enterprise div {
+    background: #0e4b79;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    align-items: center;
+    margin-right: 3px;
+    border-radius: 10px 10px 0px 0px ;
+    font-size: 16px;
+    background: #041531FF;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 40px;
+    .pointer
+  }
+  .faucet {
+      margin-right: 133px;
+      margin-bottom: -20px;
+  }
+
+
+
+
+  .active {
+    color: #ffffff;
+    background: #132c54!important;
+  }
+  //隐藏滚动条
+  .ivu-table-overflowX {
+    overflow-x: hidden;
+  }
+  .details .details-div > div:nth-child(2) {
+    height: 200PX;
+  }
+  .details-footer > div {
+    width: 12.2%;
+  }
+  .details-footer .details-div > div:nth-child(2) {
+    height: 172px;
+  }
+  .foot-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 4px;
+  }
+  /*.ivu-table-body{
+    background: #0e4b79!important;
+  }*/
+
+}

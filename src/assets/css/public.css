@@ -1,0 +1,58 @@
+.redTips:before {
+  content: '*';
+  display: inline-block;
+  line-height: 1;
+  font-family: SimSun;
+  font-size: 16px;
+  color: #ed4014;
+  margin-right: 5px;
+}
+
+.title-color {
+  color: "#515a6e";
+  letter-spacing: 3px;
+  margin: 5px 0;
+
+}
+
+.hidden-font {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 侧边栏关闭按钮颜色 */
+.ivu-drawer-close .ivu-icon-ios-close {
+  color: red;
+}
+
+
+/*  动画加载中 */
+.demo-spin-icon-load {
+  animation: ani-demo-spin 1s linear infinite;
+}
+
+@keyframes ani-demo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.demo-spin-col {
+  height: 100px;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+.btn-arrs button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}

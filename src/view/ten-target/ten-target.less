@@ -1,0 +1,184 @@
+.main {
+  width: 1920px;
+  height: 1080px;
+  background-image: url("../../assets/img/ten-target/bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+
+  .pointer{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &:before {
+    content: "";
+    display: table;
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 60px;
+    height: 30px;
+    background-image: url("../../assets/img/public/back-btn.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .left-containers {
+    position: relative;
+
+
+    .animations {
+      animation: rotate 15s linear infinite;
+      -moz-animation: rotate 15s linear infinite;
+      -webkit-animation: rotate 15s linear infinite;
+      -o-animation: rotate 15s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    // 10个行动按钮
+    .btn-arr {
+      position: relative;
+      border: 1px solid transparent;
+      font-size: 20px;
+      font-family: PingFang SC;
+      text-align: center;
+      font-weight: 400;
+      cursor: pointer;
+
+      >li {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        padding-top: 28px;
+        background-image: url("../../assets/img/ten-target/btn.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        >p {
+          padding: 0 25px;
+          margin: 0 auto;
+          .pointer
+        }
+
+
+      }
+
+      #btn0 {
+        top: 96px;
+        left: 20px;
+      }
+
+      #btn1 {
+        top: 72px;
+        left: 195px;
+      }
+
+      #btn2 {
+        top: 130px;
+        left: 360px;
+      }
+
+      #btn3 {
+        top: 241px;
+        left: 500px;
+      }
+
+      #btn4 {
+        top: 406px;
+        left: 568px;
+      }
+
+      #btn5 {
+        top: 575px;
+        left: 568px;
+      }
+
+      #btn6 {
+        top: 745px;
+        left: 484px;
+      }
+
+      #btn7 {
+        top: 866px;
+        left: 344px;
+      }
+
+      #btn8 {
+        top: 900px;
+        left: 180px;
+      }
+
+      #btn9 {
+        top: 878px;
+        left: 20px;
+      }
+
+      .active {
+        background-image: url("../../assets/img/ten-target/btn-active.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .point {
+      width: 237px;
+      height: 313px;
+      position: absolute;
+      top: 515px;
+      right: 0;
+      background-image: url("../../assets/img/ten-target/point.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    .title-bg {
+      position: absolute;
+      top: 380px;
+      left: 100px;
+      width: 330px;
+      height: 330px;
+      background-image: url('../../assets/img/ten-target/center-bg.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      .animations;
+    }
+
+    .big-titles {
+      position: absolute;
+      top: 380px;
+      left: 100px;
+      width: 330px;
+      height: 330px;
+      padding-top: 60px;
+      overflow: hidden;
+      text-align: center;
+      font-size: 23px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 65px;
+      text-shadow: 0px 3px 11px rgba(0, 0, 0, 0.6);
+    }
+
+
+  }
+
+}

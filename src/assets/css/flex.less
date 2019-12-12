@@ -1,0 +1,105 @@
+// 显示表格详情
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  //.details-div {
+  //  display: flex;
+  //  justify-content: space-around;
+  //  align-items: center;
+  //}
+  .details-div > div {
+    color: #ffffff;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .details-div > div:nth-child(1) {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+  }
+  .details-div > div:nth-child(2) {
+    height: 400px;
+    background: #041F3CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .div-one {
+    width: 280px;
+  }
+  .div-three {
+    width: 600px;
+  }
+  .div-two {
+    width: 400px;
+  }
+  .div-four {
+    width: 380px;
+  }
+  .div-four > div:nth-child(2) {
+    line-height: 300px;
+  }
+}
+.details-footer {
+  margin-top: 30px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  .details-div > div {
+    color: #ffffff;
+    text-align: center;
+  }
+  .details-div > div:nth-child(1) {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+  }
+  .details-div > div:nth-child(2) {
+    height: 200px;
+    background: #041F3CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+.details-footer > div {
+  width: 16.5%;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
